@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trivia 1.1</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Lobster&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+     
+  <div id="welcome"> 
+    <fieldset>
+    <legend>Bienvenida</legend>
+    <p>
+        Nombre: <input type="text" name="nombrecompleto" id="user">
+    </p>
+
+    <p>
+        Escoge tu Trivia:
+    </p>
+      <button onclick="getName()" >Memes </button> 
+      <button onclick="getName()" >Películas </button> 
+    </fieldset> 
+  </div> 
+
+  
+  <div id="trivia">
+    <h1 id="demo"> Hola </h1>
+    <h2>Demuestra que tanto sabes de memes</h2>
+    
+  <fieldset class = "question">
+    <legend>Pregunta 1</legend>
+      <img src="https://img.asmedia.epimg.net/resizer/BIc6J0MaH6kNpfHbA79X41DmrD8=/360x203/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/RWXTBINC6ZDODHYZRX34CKCM2M.jpg"       alt="Señora alienigena">      
+    <p class = "Statement"> 
+        ¿Con qué lenguaje se comunica la persona de arriba?
+      
+  <fieldset id="JavaScript">
+    <p>
+      <input  type="radio" id="JSInput" name="question1">   JavaScript
+    </p>
+  </fieldset>
+  <fieldset id="alien">
+    <p>
+      <input  type="radio" id="alienInput" name="question1"> Alienigena
+    </p>
+  </fieldset>
+  <fieldset class = "answer" id="Inglés">
+    <p>
+        <input  type="radio" id="Inglés" name="question1">Inglés
+    </p>
+  </fieldset>
+
+   <!--  <button type="button" onclick="changeBackground()">Ver respuesta correcta
+    </button> -->
+  </fieldset>
+ 
+  <fieldset class = "question">
+    <legend>Pregunta 2</legend>      
+      <img  src="https://www.masgamers.com/wp-content/uploads/2022/06/johnny-depp-amber-heard.jpg"
+        alt="Johnny y Amber tirandose hate">
+    
+    <p class = "Statement"> 
+        ¿Quién ganó este juicio? 
+    </p>
+    
+  <fieldset class = "answer" id= "johnny">
+    <p>
+        <input type="radio" name="question2"  onclick="myFunction()" id= "johnnyInput"> Johnny Depp
+    </p>
+  </fieldset>    
+      
+  <fieldset class = "answer" id= "amber">
+    <p>
+         <input  type="radio" name="question2" id= "amber" onclick="myFunction()"> Amber Heard
+    </p>
+  </fieldset>
+               
+  <fieldset class = "answer" id="ninguna">
+    <p> 
+      <input type="radio" id="ninguna" onclick="myFunction()" name="question2">Ninguna de las anteriores 
+    </p>
+  </fieldset>   
+  </fieldset>
+    
+  <fieldset class = "question">
+     <legend>Pregunta 3</legend>
+        <img src="https://i2.wp.com/erizos.mx/wp-content/uploads/2020/09/belinda-y-christian-nodal-tatuajes.jpg?resize=1024%2C768&ssl=1"
+      alt="Tatuajes perturbadores">
+    <p class = "Statement"> ¿A quien le pertenecen estos tatuajes?
+    </p>
+  <fieldset class = "answer" id= "chris">
+    <p>
+      <input type="radio" name="question3" id= "chris">   Chris Evans
+    </p>
+  </fieldset>
+  <fieldset class = "answer" id="pique">
+    <p>
+        <input type="radio" name="question3" id="pique"> Gerard Piqué
+    </p>
+  </fieldset>
+  <fieldset class = "answer" id="nodal">
+    <p>
+       <input  type="radio" name="question3" id="nodalInput"> Christian Nodal
+    </p>
+  </fieldset>  
+</fieldset>
+    
+    <button type="button" onclick="totalScore()">Ver respuestas correcta
+    </button> 
+    <button onclick="restartGame()">Jugar nuevamente </button> 
+  </div>
+ 
+  <script src="./script.js"></script>
+  
+</body>
+</html>

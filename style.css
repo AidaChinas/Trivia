@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: url("https://wallpaperboat.com/wp-content/uploads/2019/06/meme-1.jpg");
+  }
+  
+  img {
+    height: 400px;
+    width: 650px;
+    align-content: center;
+  }
+  
+  fieldset{
+    border-radius: 20px;
+    background-color: pink;
+  }
+  
+  h1 {
+    font-family: 'Lobster', cursive;
+    color:black;
+    font-size: 45px;  
+  }
+  h2 {
+    font-family: 'Lobster', cursive;
+    color:black;
+    font-size: 30px;
+  }
+  
+  legend {
+    font-family: 'Gentium Plus', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: purple;
+    padding-top: 1rem;
+  }
+  
+  .answer {
+    font-family: 'Gentium Plus', serif;
+    font-size: 15px;
+  }
+  
+  #alien {
+    font-family: 'Gentium Plus', serif;
+    font-size: 15px;
+  }
+  
+  .Statement {
+    font-family: 'Gentium Plus', serif;
+    font-size: 20px;
+  }
+  
+  button {
+    padding:10px; 
+    border-radius: 10px;border-color:lightgray;
+    font-family: 'Gentium Plus', serif;
+    margin-top:10px;
+  }
+  
+  #trivia {
+    display:none;
+  } 
